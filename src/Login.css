@@ -1,0 +1,175 @@
+body{        
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+.container{
+  width: 80%;
+  margin: 0 auto; /* Center the DIV horizontally */
+}
+.fixed-header, .fixed-footer{
+  width: 100%;
+  position: fixed;        
+  background: #333;
+  padding: 10px 0;
+  color: #fff;
+}
+.fixed-header{
+  top: 0;
+}
+.fixed-footer{
+  bottom: 0;
+}
+
+
+
+
+
+*{
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body{
+  background: #f5f6fa;
+}
+
+.wrapper .sidebar{
+  background: rgb(131, 182, 233);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 225px;
+  height: 100%;
+  padding: 20px 0;
+  transition: all 0.5s ease;
+}
+
+.wrapper .sidebar ul li a{
+  display: block;
+  padding: 13px 30px;
+  border-bottom: 1px solid #10558d;
+  color: rgb(241, 237, 237);
+  font-size: 16px;
+  position: relative;
+}
+
+.wrapper .sidebar ul li a .icon{
+  color: #dee4ec;
+  width: 30px;
+  display: inline-block;
+}
+
+.wrapper .sidebar ul li a.active{
+  color: #dde2e4;
+
+  background:white;
+  border-right: 2px solid rgb(233, 236, 238);
+}
+
+
+
+
+
+
+
+.loginForm {
+  padding-top: 6em;
+}
+
+.heading {
+  font-size: 180%;
+  color: rgb(34, 54, 141);
+  padding-bottom: 5px;
+}
+
+.field {
+  margin: 1.3em auto;
+}
+
+.inputfield {
+  padding: 10px;
+  font-size: 100%;
+  background: #dedede;
+  outline: none;
+  width: 230px;
+  border: none;
+}
+
+.inputfield:-webkit-autofill,
+.inputfield:-webkit-autofill:hover,
+.inputfield:-webkit-autofill:focus {
+  -webkit-text-fill-color: rgb(30, 25, 130);
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.customInput {
+  background: #dedede;
+  width: 280px;
+  margin: 0 auto;
+}
+
+.inputicon {
+  color: gray;
+}
+
+.linkfield {
+  text-decoration: underline;
+  font-size: 90%;
+  cursor: pointer;
+}
+
+.submit {
+  font-size: 100%;
+  width: 150px;
+  background: rgb(131, 158, 240);
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.submit:focus {
+  outline: none;
+}
+
+.submitfield {
+  margin-bottom: 0px;
+}
+
+.signupfield {
+  margin-top: 5px;
+}
+
+.emailfield {
+
+  background-repeat: no-repeat;
+  background-size: 6%;
+  background-position-y: center;
+  background-position-x: 3%;
+}
+
+.passwordfield {
+  background-repeat: no-repeat;
+  background-size: 6%;
+  background-position-y: center;
+  background-position-x: 3%;
+}
+
+.socialLogins {
+  margin-bottom: 10px;
+}
+
+.socialLogin {
+  padding: 0px 5px;
+  width: 40px;
+  height: 40px;
+  margin: 8px;
+  border-radius: 50%;
+}
+
+.standardText {
+  font-size: 90%;
+}
