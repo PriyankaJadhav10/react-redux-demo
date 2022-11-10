@@ -1,43 +1,23 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import Login from "./Login.js";
-import Register from "./Register.js";
-import { BrowserRouter as Router, Route } from "react-router-dom";
-import "./styles.css";
-import { Provider } from "react-redux";
-import { createStore, applyMiddleware } from "redux";
-import { reducer } from "./reducer";
-import thunk from "redux-thunk";
-import { library } from "@fortawesome/fontawesome-svg-core";
-import {
-  faFacebookF,
-  faGoogle,
-  faLinkedinIn
-} from "@fortawesome/free-brands-svg-icons";
-import { faKey, faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import Dashboard from "./Dashboard.js";
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import  './includes/bootstrap'
+import {BrowserRouter} from 'react-router-dom'
+import App from './App';
+import reportWebVitals from './reportWebVitals';
+import  'font-awesome'
 
-library.add(faFacebookF, faGoogle, faLinkedinIn, faKey, faEnvelope);
-
-const store = createStore(reducer, applyMiddleware(thunk));
-
-function App() {
-  return (
-    <div className="App">
-      <Route exact path="/" component={Login} />
-      <Route path="/register" component={Register} />
-      <Route path="/dashboard" component={Dashboard} />
-    </div>
-  );
-}
-
-const rootElement = document.getElementById("root");
-
-ReactDOM.render(
-  <Provider store={store}>
-    <Router>
-      <App />
-    </Router>
-  </Provider>,
-  rootElement
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <BrowserRouter>
+  {/* <React.StrictMode> */}
+    <App />
+  {/* </React.StrictMode> */}
+  </BrowserRouter>
+  
 );
+
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();
